@@ -1,0 +1,102 @@
+http://www.devup.com.br/php/api-dashboard/api/
+
+/resumo
+
+API/resumo http://www.devup.com.br/php/api-dashboard/api/resumo
+
+{
+    "consultas": {
+        "consultas_30dias_anteriores": 87,
+        "consultas_30dias_posteriores": 79
+    },
+    "faturamento": {
+        "anterior": {
+            "valor": 100000,
+            "comparativo": 19
+        },
+        "previsao": {
+            "valor": 90000,
+            "comparativo": -10
+        }
+    }
+}
+
+/consultas
+
+API/consultas http://www.devup.com.br/php/api-dashboard/api/consultas
+
+{
+    "realizadas": [
+        {
+            "especialidade": "Cardiologia",
+            "quantidade": 20
+        },
+        {
+            "especialidade": "Clínica Geral",
+            "quantidade": 30
+        },
+        {
+            "especialidade": "Dermatologia",
+            "quantidade": 14
+        },
+        {
+            "especialidade": "Gastroenterologia",
+            "quantidade": 10
+        },
+        {
+            "especialidade": "Pediatria",
+            "quantidade": 13
+        }
+    ],
+    "marcadas": [
+        {
+            "especialidade": "Cardiologia",
+            "quantidade": 19
+        },
+        {
+            "especialidade": "Clínica Geral",
+            "quantidade": 28
+        },
+        {
+            "especialidade": "Dermatologia",
+            "quantidade": 13
+        },
+        {
+            "especialidade": "Gastroenterologia",
+            "quantidade": 8
+        },
+        {
+            "especialidade": "Pediatria",
+            "quantidade": 11
+        }
+    ]
+}
+
+/faturamento
+
+API/faturamento http://www.devup.com.br/php/api-dashboard/api/faturamento
+
+{
+    "detalhamento": [
+        {
+            "descricao": "À vista (espécie)",
+            "valor": 32
+        },
+        {
+            "descricao": "Cheque",
+            "valor": 2
+        },
+        {
+            "descricao": "Convênio",
+            "valor": 20
+        },
+        {
+            "descricao": "Cartão de débito",
+            "valor": 28
+        },
+        {
+            "descricao": "Cartão de crédito",
+            "valor": 18
+        }
+    ]
+}
