@@ -6,6 +6,8 @@ import { PainelSimplesComponent } from './painel-simples/painel-simples.componen
 import { BarraNavegacaoComponent } from './barra-navegacao/barra-navegacao.component';
 import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ConsultaComponent } from './consulta/consulta.component';
     ConsultaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
