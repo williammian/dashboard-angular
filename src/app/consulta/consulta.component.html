@@ -1,0 +1,47 @@
+<div class="row m-1">
+
+    <div class="col">
+      <div class="card mt-2">
+        <div class="card-header text-center text-white bg-primary">
+          Consultas Realizadas
+        </div>
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Especialidade</th>
+                  <th>Quantidade</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let consulta of consultas.realizadas">
+              <td>{{consulta.especialidade}}</td>
+              <td>{{consulta.quantidade}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card mt-2">
+        <div class="card-header text-center text-white bg-primary">
+          Consultas Marcadas
+        </div>
+        <table class="table">
+          <thead>
+              <tr>
+                  <th>Especialidade</th>
+                  <th>Quantidade</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let consulta of consultas.marcadas">
+              <td>{{consulta.especialidade}}</td>
+              <td>{{consulta.quantidade}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+</div>
