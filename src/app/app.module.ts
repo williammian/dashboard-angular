@@ -9,6 +9,7 @@ import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ResumoService } from './resumo/resumo.service';
+import { ConsultaService } from './consulta/consulta.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { ResumoService } from './resumo/resumo.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ResumoService],
+  providers: [ResumoService, ConsultaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
