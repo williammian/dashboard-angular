@@ -1,6 +1,6 @@
-<div class="row m-1" *ngIf="consultas">
+<div class="row m-1" *ngIf="!erro; else mensagem">
 
-    <div class="col">
+    <div class="col" *ngIf="consultas">
       <div class="card mt-2">
         <div class="card-header text-center text-white bg-primary">
           Consultas Realizadas
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col" *ngIf="consultas">
       <div class="card mt-2">
         <div class="card-header text-center text-white bg-primary">
           Consultas Marcadas
@@ -45,3 +45,6 @@
     </div>
 
 </div>
+<ng-template #mensagem>
+  <h3 class="text-center">Falha na comunicação com o servidor</h3>
+</ng-template>
