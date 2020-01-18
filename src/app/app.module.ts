@@ -10,6 +10,8 @@ import { ConsultaComponent } from './consulta/consulta.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ResumoService } from './resumo/resumo.service';
 import { ConsultaService } from './consulta/consulta.service';
+import { FaturamentoComponent } from './faturamento/faturamento.component';
+import { FaturamentoService } from './faturamento/faturamento.service';
 
 
 @NgModule({
@@ -18,14 +20,15 @@ import { ConsultaService } from './consulta/consulta.service';
     PainelSimplesComponent,
     BarraNavegacaoComponent,
     ResumoComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    FaturamentoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ResumoService, ConsultaService],
+  providers: [ResumoService, ConsultaService, FaturamentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
